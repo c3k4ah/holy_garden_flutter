@@ -9,8 +9,12 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
+    Future.delayed(const Duration(milliseconds: 4000), () {
+      Get.offNamed('/home');
+    });
     return GetMaterialApp(
         theme:
             ThemeData(primarySwatch: Colors.green, fontFamily: "ProductSans"),

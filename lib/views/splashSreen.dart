@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
             gradient: LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [Colors.green, Colors.blue],
+          colors: [Colors.green.shade100, Colors.blue.shade100],
         )),
         alignment: Alignment.center,
         child: Column(
@@ -33,13 +33,13 @@ class _SplashScreenState extends State<SplashScreen> {
                 margin: EdgeInsets.only(
                     top: MediaQuery.of(context).size.height * 0.275),
                 child: Shimmer.fromColors(
-                    baseColor: Colors.white,
+                    baseColor: Colors.black,
                     highlightColor: forestGreen,
                     period: Duration(seconds: 2),
                     child: Text(
                       "Holy Garden",
                       style: TextStyle(
-                        fontSize: 15,
+                        fontSize: 10,
                         fontFamily: "ProductSans",
                       ),
                     )))
