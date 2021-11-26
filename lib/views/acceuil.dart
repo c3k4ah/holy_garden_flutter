@@ -5,8 +5,14 @@ import 'package:holy_garden/views/widgets/headphone_banner.dart';
 import 'package:holy_garden/views/widgets/product.dart';
 import 'package:holy_garden/views/widgets/product_filters.dart';
 import 'package:holy_garden/views/widgets/products_title.dart';
+import 'package:image_picker/image_picker.dart';
 
-class Acceuil extends StatelessWidget {
+class Acceuil extends StatefulWidget {
+  @override
+  _AcceuilState createState() => _AcceuilState();
+}
+
+class _AcceuilState extends State<Acceuil> {
   @override
   Widget build(BuildContext context) {
     return Column(

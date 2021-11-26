@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:holy_garden/views/acceuil.dart';
+import 'package:holy_garden/views/details.dart';
 import 'package:holy_garden/views/home.dart';
 import 'package:holy_garden/views/login.dart';
 // ignore: unused_import
@@ -27,7 +28,8 @@ class MyApp extends StatelessWidget {
           '/': (context) => SplashScreen(),
           '/home': (context) => HomeSreen(),
           '/acceuil': (context) => Acceuil(),
-          '/login': (context) => LoginPage()
+          '/login': (context) => LoginPage(),
+          '/detail': (context) => DetailPage()
         });
   }
 }

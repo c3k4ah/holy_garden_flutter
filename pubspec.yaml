@@ -32,6 +32,7 @@ dependencies:
   shimmer: ^2.0.0
   flutter_launcher_icons: "^0.9.2"
   palette_generator: 
+  image_picker: ^0.8.4+1
 
 flutter_icons:
   android: true

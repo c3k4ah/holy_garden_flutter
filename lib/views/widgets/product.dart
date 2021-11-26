@@ -74,7 +74,7 @@ class Product extends StatelessWidget {
                             fontWeight: FontWeight.normal)),
                     Text(' $region',
                         style: TextStyle(
-                            color: Colors.red, fontWeight: FontWeight.bold))
+                            color: forestGreen, fontWeight: FontWeight.bold))
                   ],
                 ),
               )

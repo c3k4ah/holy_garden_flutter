@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:holy_garden/constante.dart';
 
 import 'product.dart';
@@ -34,7 +35,9 @@ class SpecialProduct extends Product {
             child: Center(
                 child: IconButton(
                     iconSize: 35,
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.toNamed('/detail');
+                    },
                     icon: Icon(Icons.collections))),
             width: 120,
             height: 50,
