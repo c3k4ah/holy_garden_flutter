@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:holy_garden/views/acceuil.dart';
 import 'package:holy_garden/views/home.dart';
+import 'package:holy_garden/views/login.dart';
+// ignore: unused_import
 import 'package:holy_garden/views/splashSreen.dart';
 
 void main() {
@@ -13,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Future.delayed(const Duration(milliseconds: 4000), () {
-      Get.offNamed('/home');
+      Get.offNamed('/login');
     });
     return GetMaterialApp(
         theme:
@@ -23,6 +26,8 @@ class MyApp extends StatelessWidget {
         routes: {
           '/': (context) => SplashScreen(),
           '/home': (context) => HomeSreen(),
+          '/acceuil': (context) => Acceuil(),
+          '/login': (context) => LoginPage()
         });
   }
 }
